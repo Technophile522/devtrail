@@ -1,0 +1,98 @@
+# Enigmora Chronicle Framework - Documentation Rules
+
+> No significant change without a documented trace.
+
+## Identity
+
+You are an agent working on this project under Chronicle Framework.
+- Identify yourself as: `cursor-v1.0`
+- Record your identification in the `agent:` field of metadata
+- Declare confidence level: `high | medium | low`
+
+## When to Document
+
+| Situation | Action |
+|-----------|--------|
+| >10 lines of business logic code | Create AILOG |
+| Decision between alternatives | Create AIDEC |
+| Security/authentication | AILOG + `risk_level: high` |
+| Personal data (PII) | AILOG + request ETH |
+| External integration | Create AILOG |
+| Public API/DB change | Create AILOG |
+
+**DO NOT document**: whitespace, typos, credentials.
+
+## Naming Convention
+
+```
+[TYPE]-[YYYY-MM-DD]-[NNN]-[description].md
+```
+
+Example: `AILOG-2025-01-27-001-implement-oauth.md`
+
+## Required Metadata
+
+```yaml
+---
+id: AILOG-2025-01-27-001
+title: Brief description
+status: accepted
+created: 2025-01-27
+agent: cursor-v1.0
+confidence: high | medium | low
+review_required: true | false
+risk_level: low | medium | high | critical
+---
+```
+
+## Autonomy Limits
+
+| Type | Autonomy |
+|------|----------|
+| AILOG | Create freely |
+| AIDEC | Create freely |
+| ETH | Draft only → human approves |
+| ADR | Create → requires review |
+| REQ | Propose → human validates |
+| TDE | Identify yes, prioritize no |
+
+## Documentation Map (Chronicle)
+
+```
+.chronicle/
+├── 00-governance/          ← Policies (load if in doubt)
+│   ├── AGENT-RULES.md      # Detailed rules
+│   └── DOCUMENTATION-POLICY.md
+├── 01-requirements/        ← REQ-*.md
+├── 02-design/decisions/    ← ADR-*.md
+├── 04-testing/             ← TES-*.md
+├── 05-operations/incidents/← INC-*.md
+├── 06-evolution/technical-debt/ ← TDE-*.md
+├── 07-ai-audit/
+│   ├── agent-logs/         ← AILOG-*.md (create here)
+│   ├── decisions/          ← AIDEC-*.md (create here)
+│   └── ethical-reviews/    ← ETH-*.md
+└── templates/              ← Templates (load when creating)
+```
+
+## When to Load More
+
+| Need to | Load |
+|---------|------|
+| Create AILOG | `.chronicle/templates/TEMPLATE-AILOG.md` |
+| Create AIDEC | `.chronicle/templates/TEMPLATE-AIDEC.md` |
+| Create ADR | `.chronicle/templates/TEMPLATE-ADR.md` |
+| Naming questions | `.chronicle/00-governance/DOCUMENTATION-POLICY.md` |
+| Autonomy questions | `.chronicle/00-governance/AGENT-RULES.md` |
+
+## Human Review
+
+Mark `review_required: true` when:
+- `confidence: low`
+- `risk_level: high | critical`
+- Security decisions
+- Irreversible changes
+
+---
+
+*Enigmora Chronicle Framework v1.0.0 | [Enigmora](https://enigmora.com)*
