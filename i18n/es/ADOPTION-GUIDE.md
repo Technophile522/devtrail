@@ -1,6 +1,6 @@
-# Enigmora Chronicle Framework - Guía de Adopción
+# Enigmora Monimen Framework - Guía de Adopción
 
-**Una guía completa para adoptar Enigmora Chronicle Framework en proyectos nuevos o existentes.**
+**Una guía completa para adoptar Enigmora Monimen Framework en proyectos nuevos o existentes.**
 
 [![Enigmora](https://img.shields.io/badge/by-Enigmora-purple.svg)](https://enigmora.com)
 
@@ -10,7 +10,7 @@
 
 ## Tabla de Contenidos
 
-1. [¿Qué es Chronicle Framework?](#qué-es-chronicle-framework)
+1. [¿Qué es Monimen Framework?](#qué-es-monimen-framework)
 2. [¿Para quién es?](#para-quién-es)
 3. [Beneficios](#beneficios)
 4. [Cumplimiento de Estándares](#cumplimiento-de-estándares)
@@ -22,9 +22,9 @@
 
 ---
 
-## ¿Qué es Chronicle Framework?
+## ¿Qué es Monimen Framework?
 
-Enigmora Chronicle Framework es un **sistema de gobernanza de documentación** diseñado para proyectos de desarrollo de software que utilizan asistentes de codificación con IA. Proporciona:
+Enigmora Monimen Framework es un **sistema de gobernanza de documentación** diseñado para proyectos de desarrollo de software que utilizan asistentes de codificación con IA. Proporciona:
 
 - **Documentación estructurada** para decisiones, acciones y cambios
 - **Responsabilidad de agentes IA** mediante identificación obligatoria y seguimiento de confianza
@@ -35,9 +35,9 @@ Enigmora Chronicle Framework es un **sistema de gobernanza de documentación** d
 
 > **"Ningún cambio significativo sin un rastro documentado."**
 
-Chronicle asegura que cada cambio significativo en tu código base esté documentado, atribuido y sea revisable—ya sea hecho por un desarrollador humano o un asistente de IA.
+Monimen asegura que cada cambio significativo en tu código base esté documentado, atribuido y sea revisable—ya sea hecho por un desarrollador humano o un asistente de IA.
 
-### Lo que Chronicle NO Es
+### Lo que Monimen NO Es
 
 - No es un generador de documentación (proporciona estructura, no generación de contenido)
 - No es un reemplazo para comentarios de código o documentación de API
@@ -59,7 +59,7 @@ Chronicle asegura que cada cambio significativo en tu código base esté documen
 
 ### Entornos de Desarrollo Compatibles
 
-Enigmora Chronicle Framework proporciona archivos de configuración para:
+Enigmora Monimen Framework proporciona archivos de configuración para:
 
 | Plataforma | Archivo de Configuración | Estado |
 |------------|--------------------------|--------|
@@ -71,9 +71,9 @@ Enigmora Chronicle Framework proporciona archivos de configuración para:
 
 ### Metodologías Compatibles
 
-Chronicle funciona con cualquier metodología de desarrollo:
+Monimen funciona con cualquier metodología de desarrollo:
 
-| Metodología | Cómo se Integra Chronicle |
+| Metodología | Cómo se Integra Monimen |
 |-------------|---------------------------|
 | **Agile/Scrum** | Documentos REQ se mapean a historias de usuario; ADRs capturan decisiones de sprint |
 | **Cascada** | Trazabilidad completa desde requisitos hasta implementación |
@@ -116,11 +116,11 @@ Chronicle funciona con cualquier metodología de desarrollo:
 
 ## Cumplimiento de Estándares
 
-Enigmora Chronicle Framework se alinea con y soporta cumplimiento para:
+Enigmora Monimen Framework se alinea con y soporta cumplimiento para:
 
 ### Estándares de Ingeniería de Software
 
-| Estándar | Cómo Ayuda Chronicle |
+| Estándar | Cómo Ayuda Monimen |
 |----------|---------------------|
 | **IEEE 830** (SRS) | Documentos REQ siguen formato estructurado de requisitos |
 | **ISO/IEC 25010** | Atributos de calidad documentados en ADRs |
@@ -128,7 +128,7 @@ Enigmora Chronicle Framework se alinea con y soporta cumplimiento para:
 
 ### Documentación de Arquitectura
 
-| Estándar | Cómo Ayuda Chronicle |
+| Estándar | Cómo Ayuda Monimen |
 |----------|---------------------|
 | **ADR (Architecture Decision Records)** | Soporte nativo de ADR con metadatos extendidos |
 | **arc42** | ADRs complementan documentación de decisiones de arc42 |
@@ -136,7 +136,7 @@ Enigmora Chronicle Framework se alinea con y soporta cumplimiento para:
 
 ### Cumplimiento y Gobernanza
 
-| Regulación | Cómo Ayuda Chronicle |
+| Regulación | Cómo Ayuda Monimen |
 |------------|---------------------|
 | **GDPR** | Documentos ETH para evaluaciones de impacto de privacidad |
 | **SOC 2** | Documentación de cambios y registro de accesos |
@@ -145,7 +145,7 @@ Enigmora Chronicle Framework se alinea con y soporta cumplimiento para:
 
 ### Gobernanza de IA
 
-| Marco | Cómo Ayuda Chronicle |
+| Marco | Cómo Ayuda Monimen |
 |-------|---------------------|
 | **EU AI Act** | Transparencia a través de AILOG/AIDEC; supervisión humana via ETH |
 | **NIST AI RMF** | Documentación de riesgos en registros de decisión |
@@ -159,7 +159,7 @@ Enigmora Chronicle Framework se alinea con y soporta cumplimiento para:
 
 1. **Crear desde plantilla**
 
-   Haz clic en "Use this template" en el [repositorio de Chronicle Framework](https://github.com/enigmora/chronicle-framework) para crear un nuevo repositorio.
+   Haz clic en "Use this template" en el [repositorio de Monimen Framework](https://github.com/enigmora/monimen-framework) para crear un nuevo repositorio.
 
 2. **Clonar tu nuevo repositorio**
    ```bash
@@ -170,8 +170,8 @@ Enigmora Chronicle Framework se alinea con y soporta cumplimiento para:
 3. **Eliminar archivos de ejemplo (opcional)**
    ```bash
    # Mantener la estructura, eliminar contenido de ejemplo
-   find .chronicle -name "*.md" -path "*-audit/*" -delete
-   find .chronicle -name "*.md" -path "*requirements/*" -delete
+   find .monimen -name "*.md" -path "*-audit/*" -delete
+   find .monimen -name "*.md" -path "*requirements/*" -delete
    # etc.
    ```
 
@@ -186,38 +186,38 @@ Enigmora Chronicle Framework se alinea con y soporta cumplimiento para:
 5. **Inicializar tu documentación**
    ```bash
    # Crear tu primer requisito
-   touch .chronicle/01-requirements/REQ-$(date +%Y-%m-%d)-001-requisitos-iniciales.md
+   touch .monimen/01-requirements/REQ-$(date +%Y-%m-%d)-001-requisitos-iniciales.md
    ```
 
 ### Opción 2: Configuración Manual
 
-1. **Descargar Chronicle Framework**
+1. **Descargar Monimen Framework**
    ```bash
    # Clonar el repositorio
-   git clone https://github.com/enigmora/chronicle-framework.git chronicle-temp
+   git clone https://github.com/enigmora/monimen-framework.git monimen-temp
 
    # Copiar a tu proyecto
-   cp -r chronicle-temp/.chronicle tu-proyecto/
-   cp chronicle-temp/CLAUDE.md tu-proyecto/
-   cp chronicle-temp/GEMINI.md tu-proyecto/
-   cp chronicle-temp/.cursorrules tu-proyecto/
-   cp -r chronicle-temp/.github tu-proyecto/
-   cp -r chronicle-temp/scripts tu-proyecto/
+   cp -r monimen-temp/.monimen tu-proyecto/
+   cp monimen-temp/CLAUDE.md tu-proyecto/
+   cp monimen-temp/GEMINI.md tu-proyecto/
+   cp monimen-temp/.cursorrules tu-proyecto/
+   cp -r monimen-temp/.github tu-proyecto/
+   cp -r monimen-temp/scripts tu-proyecto/
 
    # Limpiar
-   rm -rf chronicle-temp
+   rm -rf monimen-temp
    ```
 
 2. **Agregar a .gitignore (si es necesario)**
    ```gitignore
-   # Chronicle Framework - nada que ignorar por defecto
+   # Monimen Framework - nada que ignorar por defecto
    # Agrega patrones aquí si generas archivos temporales
    ```
 
 3. **Commit de la estructura**
    ```bash
-   git add .chronicle/ CLAUDE.md GEMINI.md .cursorrules .github/ scripts/
-   git commit -m "chore: adoptar Chronicle Framework para gobernanza de documentación"
+   git add .monimen/ CLAUDE.md GEMINI.md .cursorrules .github/ scripts/
+   git commit -m "chore: adoptar Monimen Framework para gobernanza de documentación"
    ```
 
 ---
@@ -238,40 +238,40 @@ Enigmora Chronicle Framework se alinea con y soporta cumplimiento para:
 
    | Estado Actual | Acción Recomendada |
    |---------------|-------------------|
-   | Sin documentación | Comenzar desde cero con Chronicle |
-   | Docs en carpeta `docs/` | Mantener `docs/` para docs orientados al usuario, agregar `.chronicle/` para docs de desarrollo |
-   | ADRs existentes | Migrar a `.chronicle/02-design/decisions/` con nueva nomenclatura |
+   | Sin documentación | Comenzar desde cero con Monimen |
+   | Docs en carpeta `docs/` | Mantener `docs/` para docs orientados al usuario, agregar `.monimen/` para docs de desarrollo |
+   | ADRs existentes | Migrar a `.monimen/02-design/decisions/` con nueva nomenclatura |
    | Documentación mixta | Categorizar y migrar gradualmente |
 
 ### Fase 2: Instalación (Día 1-2)
 
-1. **Agregar estructura Chronicle**
+1. **Agregar estructura Monimen**
    ```bash
-   # Descargar y copiar archivos Chronicle
-   git clone https://github.com/enigmora/chronicle-framework.git chronicle-temp
+   # Descargar y copiar archivos Monimen
+   git clone https://github.com/enigmora/monimen-framework.git monimen-temp
 
    # Copiar estructura (no sobrescribirá archivos existentes)
-   cp -rn chronicle-temp/.chronicle ./
-   cp -n chronicle-temp/CLAUDE.md ./
-   cp -n chronicle-temp/GEMINI.md ./
-   cp -n chronicle-temp/.cursorrules ./
+   cp -rn monimen-temp/.monimen ./
+   cp -n monimen-temp/CLAUDE.md ./
+   cp -n monimen-temp/GEMINI.md ./
+   cp -n monimen-temp/.cursorrules ./
    mkdir -p .github
-   cp -rn chronicle-temp/.github/* ./.github/
-   cp -rn chronicle-temp/scripts ./
+   cp -rn monimen-temp/.github/* ./.github/
+   cp -rn monimen-temp/scripts ./
 
-   rm -rf chronicle-temp
+   rm -rf monimen-temp
    ```
 
 2. **Resolver conflictos con `docs/` existente**
 
-   Chronicle usa `.chronicle/` específicamente para evitar conflictos:
+   Monimen usa `.monimen/` específicamente para evitar conflictos:
 
    ```
    tu-proyecto/
    ├── docs/                    ← Mantener para docs de API, guías de usuario, etc.
    │   ├── api/
    │   └── user-guide/
-   ├── .chronicle/              ← Agregar para documentación de desarrollo
+   ├── .monimen/              ← Agregar para documentación de desarrollo
    │   ├── 00-governance/
    │   ├── 01-requirements/
    │   └── ...
@@ -285,10 +285,10 @@ Enigmora Chronicle Framework se alinea con y soporta cumplimiento para:
    Para cada ADR existente:
    ```bash
    # Antiguo: docs/adr/001-usar-postgresql.md
-   # Nuevo: .chronicle/02-design/decisions/ADR-2024-01-15-001-usar-postgresql.md
+   # Nuevo: .monimen/02-design/decisions/ADR-2024-01-15-001-usar-postgresql.md
    ```
 
-   Agregar metadatos Chronicle al front-matter:
+   Agregar metadatos Monimen al front-matter:
    ```yaml
    ---
    id: ADR-2024-01-15-001
@@ -309,7 +309,7 @@ Enigmora Chronicle Framework se alinea con y soporta cumplimiento para:
 
    Crear un AILOG documentando la migración:
    ```
-   .chronicle/07-ai-audit/agent-logs/AILOG-2025-01-27-001-adopcion-chronicle.md
+   .monimen/07-ai-audit/agent-logs/AILOG-2025-01-27-001-adopcion-monimen.md
    ```
 
 ### Fase 4: Adopción del Equipo (Semana 2-4)
@@ -320,13 +320,13 @@ Enigmora Chronicle Framework se alinea con y soporta cumplimiento para:
    ```markdown
    ## Documentación
 
-   Este proyecto usa [Chronicle Framework](enlace) para gobernanza de documentación.
+   Este proyecto usa [Monimen Framework](enlace) para gobernanza de documentación.
 
-   - Todos los cambios significativos deben documentarse en `.chronicle/`
+   - Todos los cambios significativos deben documentarse en `.monimen/`
    - Cambios asistidos por IA requieren entradas AILOG
    - Decisiones arquitectónicas requieren documentos ADR
 
-   Ver `.chronicle/QUICK-REFERENCE.md` para tipos de documentos y nomenclatura.
+   Ver `.monimen/QUICK-REFERENCE.md` para tipos de documentos y nomenclatura.
    ```
 
 2. **Habilitar hooks pre-commit (opcional)**
@@ -347,7 +347,7 @@ Enigmora Chronicle Framework se alinea con y soporta cumplimiento para:
 
 | Semana | Enfoque |
 |--------|---------|
-| Semana 1 | Equipo principal adopta Chronicle para nuevas decisiones |
+| Semana 1 | Equipo principal adopta Monimen para nuevas decisiones |
 | Semana 2 | Migrar ADRs existentes críticos |
 | Semana 3 | Habilitar validación en CI/CD |
 | Semana 4 | Adopción completa del equipo; documentar deuda técnica existente |
@@ -373,15 +373,15 @@ Para agregar un nuevo tipo de documento:
 
 1. **Crear la plantilla**
    ```
-   .chronicle/templates/TEMPLATE-NUEVOTIPO.md
+   .monimen/templates/TEMPLATE-NUEVOTIPO.md
    ```
 
 2. **Actualizar docs de gobernanza**
 
    Agregar el nuevo tipo a:
-   - `.chronicle/00-governance/DOCUMENTATION-POLICY.md`
-   - `.chronicle/00-governance/AGENT-RULES.md`
-   - `.chronicle/QUICK-REFERENCE.md`
+   - `.monimen/00-governance/DOCUMENTATION-POLICY.md`
+   - `.monimen/00-governance/AGENT-RULES.md`
+   - `.monimen/QUICK-REFERENCE.md`
 
 3. **Actualizar configs de agente**
 
@@ -415,11 +415,11 @@ Puedes renombrar carpetas, pero actualiza todas las referencias en:
 Si usas Claude Code, verifica el cumplimiento de documentación con el skill integrado:
 
 ```bash
-/chronicle-status
+/monimen-status
 ```
 
 Este skill muestra:
-- Qué documentos Chronicle fueron creados recientemente
+- Qué documentos Monimen fueron creados recientemente
 - Qué archivos modificados pueden necesitar documentación
 - Estado general de cumplimiento de documentación
 
@@ -438,10 +438,10 @@ bash scripts/pre-commit-docs.sh
 
 ### Lista de Verificación
 
-- [ ] Estructura de carpetas `.chronicle/` existe
+- [ ] Estructura de carpetas `.monimen/` existe
 - [ ] Al menos un archivo de config de agente existe (`CLAUDE.md`, `GEMINI.md`, etc.)
-- [ ] Documentos de gobernanza presentes en `.chronicle/00-governance/`
-- [ ] Plantillas presentes en `.chronicle/templates/`
+- [ ] Documentos de gobernanza presentes en `.monimen/00-governance/`
+- [ ] Plantillas presentes en `.monimen/templates/`
 - [ ] `QUICK-REFERENCE.md` es accesible
 - [ ] Scripts de validación se ejecutan sin errores
 - [ ] (Opcional) Hook pre-commit está instalado
@@ -453,34 +453,34 @@ bash scripts/pre-commit-docs.sh
 
 ### Preguntas Generales
 
-**P: ¿Chronicle reemplaza mi documentación existente?**
+**P: ¿Monimen reemplaza mi documentación existente?**
 
-R: No. Chronicle es para *documentación del proceso de desarrollo* (decisiones, cambios, revisiones). Mantén tu carpeta `docs/` existente para documentación orientada al usuario, referencias de API y guías.
+R: No. Monimen es para *documentación del proceso de desarrollo* (decisiones, cambios, revisiones). Mantén tu carpeta `docs/` existente para documentación orientada al usuario, referencias de API y guías.
 
-**P: ¿Necesito usar asistentes de codificación con IA para beneficiarme de Chronicle?**
+**P: ¿Necesito usar asistentes de codificación con IA para beneficiarme de Monimen?**
 
-R: No. Chronicle funciona también para equipos solo de humanos. Las características de auditoría de IA (AILOG, AIDEC, ETH) se vuelven especialmente valiosas al usar asistentes de IA, pero ADR, REQ, TDE y otros tipos de documentos son útiles para cualquier equipo.
+R: No. Monimen funciona también para equipos solo de humanos. Las características de auditoría de IA (AILOG, AIDEC, ETH) se vuelven especialmente valiosas al usar asistentes de IA, pero ADR, REQ, TDE y otros tipos de documentos son útiles para cualquier equipo.
 
-**P: ¿Cuánto overhead agrega Chronicle?**
+**P: ¿Cuánto overhead agrega Monimen?**
 
-R: Chronicle sigue un principio de "documentación mínima viable". Solo los cambios significativos requieren documentación. Los cambios triviales (erratas, formato) están explícitamente excluidos.
+R: Monimen sigue un principio de "documentación mínima viable". Solo los cambios significativos requieren documentación. Los cambios triviales (erratas, formato) están explícitamente excluidos.
 
 ### Preguntas Técnicas
 
-**P: ¿Por qué usar `.chronicle/` en lugar de `docs/`?**
+**P: ¿Por qué usar `.monimen/` en lugar de `docs/`?**
 
-R: La carpeta `docs/` se usa comúnmente para documentación orientada al usuario, GitHub Pages o docs de API generados. Usar `.chronicle/` evita conflictos y separa claramente la documentación de desarrollo de la documentación de usuario.
+R: La carpeta `docs/` se usa comúnmente para documentación orientada al usuario, GitHub Pages o docs de API generados. Usar `.monimen/` evita conflictos y separa claramente la documentación de desarrollo de la documentación de usuario.
 
-**P: ¿Puedo usar Chronicle con monorepos?**
+**P: ¿Puedo usar Monimen con monorepos?**
 
 R: Sí. Puedes:
-- Tener un `.chronicle/` en la raíz para todo el monorepo
-- Tener carpetas `.chronicle/` separadas en cada paquete/servicio
+- Tener un `.monimen/` en la raíz para todo el monorepo
+- Tener carpetas `.monimen/` separadas en cada paquete/servicio
 - Usar un enfoque híbrido con gobernanza compartida en la raíz
 
 **P: ¿Cómo manejo información sensible?**
 
-R: Chronicle prohíbe explícitamente documentar credenciales, tokens o secretos. Los scripts de validación verifican patrones sensibles comunes y te advierten. Para decisiones genuinamente sensibles, documenta la *existencia* de la decisión sin los detalles sensibles.
+R: Monimen prohíbe explícitamente documentar credenciales, tokens o secretos. Los scripts de validación verifican patrones sensibles comunes y te advierten. Para decisiones genuinamente sensibles, documenta la *existencia* de la decisión sin los detalles sensibles.
 
 ### Preguntas de Adopción
 
@@ -492,16 +492,16 @@ R: Comienza pequeño:
 3. Demuestra tiempo ahorrado al revisar decisiones antiguas
 4. Expande gradualmente a otros tipos de documentos
 
-**P: ¿Cómo manejo documentos creados antes de adoptar Chronicle?**
+**P: ¿Cómo manejo documentos creados antes de adoptar Monimen?**
 
 R: Tienes tres opciones:
-1. **Migrar**: Convertir documentos antiguos al formato Chronicle (recomendado para docs importantes)
-2. **Referenciar**: Mantener docs antiguos en su lugar, referenciarlos desde docs Chronicle
-3. **Archivar**: Mover docs antiguos a una carpeta de archivo, comenzar de nuevo con Chronicle
+1. **Migrar**: Convertir documentos antiguos al formato Monimen (recomendado para docs importantes)
+2. **Referenciar**: Mantener docs antiguos en su lugar, referenciarlos desde docs Monimen
+3. **Archivar**: Mover docs antiguos a una carpeta de archivo, comenzar de nuevo con Monimen
 
 **P: ¿Qué pasa si mi asistente de IA no sigue las reglas?**
 
-R: Las reglas de Chronicle son instrucciones, no cumplimiento forzado. Si un asistente de IA crea documentación no conforme:
+R: Las reglas de Monimen son instrucciones, no cumplimiento forzado. Si un asistente de IA crea documentación no conforme:
 1. El hook pre-commit detectará errores de validación
 2. CI/CD marcará problemas en PRs
 3. Puedes corregir manualmente y educar a la IA en el siguiente prompt
@@ -510,15 +510,15 @@ R: Las reglas de Chronicle son instrucciones, no cumplimiento forzado. Si un asi
 
 ## Obtener Ayuda
 
-- **Issues**: [GitHub Issues](https://github.com/enigmora/chronicle-framework/issues)
-- **Discusiones**: [GitHub Discussions](https://github.com/enigmora/chronicle-framework/discussions)
+- **Issues**: [GitHub Issues](https://github.com/enigmora/monimen-framework/issues)
+- **Discusiones**: [GitHub Discussions](https://github.com/enigmora/monimen-framework/discussions)
 - **Contribuir**: Ver [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 
 <div align="center">
 
-**Enigmora Chronicle Framework** — Porque cada cambio cuenta una historia.
+**Enigmora Monimen Framework** — Porque cada cambio cuenta una historia.
 
 [Volver al README](README.md) • [Enigmora](https://enigmora.com)
 

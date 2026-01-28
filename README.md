@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/logo-chronicle.svg" alt="Chronicle Logo" width="160" height="160">
+<img src="assets/logo-monimen.svg" alt="Monimen Logo" width="160" height="160">
 
-# Enigmora Chronicle Framework
+# Enigmora Monimen Framework
 
 **Documentation Governance for AI-Assisted Software Development**
 
@@ -35,7 +35,7 @@ Without structured documentation, AI-assisted development becomes a black box.
 
 ## The Solution
 
-Enigmora Chronicle Framework provides a **documentation governance system** that ensures:
+Enigmora Monimen Framework provides a **documentation governance system** that ensures:
 
 > **"No significant change without a documented trace."**
 
@@ -99,43 +99,43 @@ Automated validation tools:
 
 **Option 1: Use as Template** (Recommended)
 
-Click the **"Use this template"** button above to create a new repository with Enigmora Chronicle Framework pre-configured.
+Click the **"Use this template"** button above to create a new repository with Enigmora Monimen Framework pre-configured.
 
 **Option 2: Clone and Copy**
 
 ```bash
-# Clone Enigmora Chronicle Framework
-git clone https://github.com/enigmora/chronicle-framework.git
+# Clone Enigmora Monimen Framework
+git clone https://github.com/enigmora/monimen-framework.git
 
 # Copy to your project
-cp -r chronicle-framework/.chronicle your-project/
-cp chronicle-framework/CLAUDE.md your-project/
-cp chronicle-framework/GEMINI.md your-project/
-cp chronicle-framework/.cursorrules your-project/
-cp -r chronicle-framework/.github your-project/
-cp -r chronicle-framework/scripts your-project/
+cp -r monimen-framework/.monimen your-project/
+cp monimen-framework/CLAUDE.md your-project/
+cp monimen-framework/GEMINI.md your-project/
+cp monimen-framework/.cursorrules your-project/
+cp -r monimen-framework/.github your-project/
+cp -r monimen-framework/scripts your-project/
 ```
 
 ### Quick Start (Existing Project)
 
 ```bash
-# Download Enigmora Chronicle Framework
-git clone https://github.com/enigmora/chronicle-framework.git chronicle-temp
+# Download Enigmora Monimen Framework
+git clone https://github.com/enigmora/monimen-framework.git monimen-temp
 
 # Copy without overwriting (Linux/Mac)
-cp -rn chronicle-temp/.chronicle ./
-cp -n chronicle-temp/CLAUDE.md ./
-cp -n chronicle-temp/GEMINI.md ./
-cp -n chronicle-temp/.cursorrules ./
-cp -rn chronicle-temp/.github ./
-cp -rn chronicle-temp/scripts ./
+cp -rn monimen-temp/.monimen ./
+cp -n monimen-temp/CLAUDE.md ./
+cp -n monimen-temp/GEMINI.md ./
+cp -n monimen-temp/.cursorrules ./
+cp -rn monimen-temp/.github ./
+cp -rn monimen-temp/scripts ./
 
 # Clean up
-rm -rf chronicle-temp
+rm -rf monimen-temp
 
 # Commit
-git add .chronicle/ CLAUDE.md GEMINI.md .cursorrules .github/ scripts/
-git commit -m "chore: adopt Enigmora Chronicle Framework"
+git add .monimen/ CLAUDE.md GEMINI.md .cursorrules .github/ scripts/
+git commit -m "chore: adopt Enigmora Monimen Framework"
 ```
 
 📖 **See [ADOPTION-GUIDE.md](ADOPTION-GUIDE.md) for detailed instructions, migration strategies, and team rollout plans.**
@@ -147,7 +147,7 @@ git commit -m "chore: adopt Enigmora Chronicle Framework"
 ### Quick Reference
 
 ```
-.chronicle/
+.monimen/
 ├── 00-governance/           # Policies and rules
 ├── 01-requirements/         # REQ documents
 ├── 02-design/decisions/     # ADR documents
@@ -175,9 +175,9 @@ Example: `ADR-2025-01-27-001-use-postgresql-for-persistence.md`
 | Document | Description |
 |----------|-------------|
 | [ADOPTION-GUIDE.md](ADOPTION-GUIDE.md) | Comprehensive adoption guide |
-| [.chronicle/QUICK-REFERENCE.md](.chronicle/QUICK-REFERENCE.md) | One-page reference card |
-| [.chronicle/00-governance/PRINCIPLES.md](.chronicle/00-governance/PRINCIPLES.md) | Guiding principles |
-| [.chronicle/00-governance/AGENT-RULES.md](.chronicle/00-governance/AGENT-RULES.md) | Rules for AI agents |
+| [.monimen/QUICK-REFERENCE.md](.monimen/QUICK-REFERENCE.md) | One-page reference card |
+| [.monimen/00-governance/PRINCIPLES.md](.monimen/00-governance/PRINCIPLES.md) | Guiding principles |
+| [.monimen/00-governance/AGENT-RULES.md](.monimen/00-governance/AGENT-RULES.md) | Rules for AI agents |
 
 ---
 
@@ -188,7 +188,7 @@ Example: `ADR-2025-01-27-001-use-postgresql-for-persistence.md`
 An AI assistant working on your code automatically:
 
 ```yaml
-# Creates: .chronicle/07-ai-audit/agent-logs/AILOG-2025-01-27-001-implement-auth.md
+# Creates: .monimen/07-ai-audit/agent-logs/AILOG-2025-01-27-001-implement-auth.md
 ---
 id: AILOG-2025-01-27-001
 title: Implement JWT authentication
@@ -216,7 +216,7 @@ High-risk or low-confidence changes are flagged:
 When choosing between alternatives, decisions are documented:
 
 ```yaml
-# Creates: .chronicle/07-ai-audit/decisions/AIDEC-2025-01-27-001-auth-strategy.md
+# Creates: .monimen/07-ai-audit/decisions/AIDEC-2025-01-27-001-auth-strategy.md
 ---
 id: AIDEC-2025-01-27-001
 title: Choose JWT over session-based auth
@@ -233,7 +233,7 @@ justification: "Stateless architecture requirement..."
 When AI encounters ethical considerations:
 
 ```yaml
-# Creates: .chronicle/07-ai-audit/ethical-reviews/ETH-2025-01-27-001-user-data.md
+# Creates: .monimen/07-ai-audit/ethical-reviews/ETH-2025-01-27-001-user-data.md
 ---
 id: ETH-2025-01-27-001
 title: User data collection scope
@@ -278,32 +278,65 @@ The included workflow (`.github/workflows/docs-validation.yml`) automatically va
 
 ---
 
-## Skills (Claude Code)
+## Skills
 
-Chronicle Framework includes skills for Claude Code that automate documentation verification:
+Monimen Framework includes skills for AI agents that enable **active documentation creation**.
 
-### /chronicle-status
+> **Binary System**: Monimen uses a passive system (agents auto-document via context instructions) and an active system (users invoke skills to create documentation manually or when the agent missed something).
 
-Check documentation status after AI-assisted work:
+### Available Skills
+
+| Skill | Purpose | Claude | Gemini |
+|-------|---------|--------|--------|
+| `/monimen-status` | Check documentation compliance | ✅ | ✅ |
+| `/monimen-new` | Create any document type (unified) | ✅ | ✅ |
+| `/monimen-ailog` | Quick AILOG creation | ✅ | ✅ |
+| `/monimen-aidec` | Quick AIDEC creation | ✅ | ✅ |
+| `/monimen-adr` | Quick ADR creation | ✅ | ✅ |
+
+### Usage Examples
 
 ```bash
-/chronicle-status
+# Check documentation status
+/monimen-status
+
+# Create documentation (agent suggests type)
+/monimen-new
+
+# Force specific document type
+/monimen-new ailog
+
+# Direct shortcuts
+/monimen-ailog
+/monimen-aidec
+/monimen-adr
 ```
 
-Shows:
-- Recent Chronicle documents created
-- Modified files that may need documentation
-- Summary of documentation compliance
+### Shell Scripts (Manual Use)
+
+For users who prefer command-line or use agents without skill support:
+
+```bash
+# Interactive document creation
+./scripts/monimen-new.sh
+
+# Create specific type directly
+./scripts/monimen-new.sh ailog
+
+# Check documentation status
+./scripts/monimen-status.sh
+```
+
 
 ### Agent Reporting
 
-AI agents are instructed to report their documentation status at the end of each task:
+AI agents report documentation status at the end of each task:
 
 | Status | Meaning |
 |--------|---------|
-| `Chronicle: Created AILOG-...` | Documentation was created |
-| `Chronicle: No documentation required` | Change was minor (<10 lines) |
-| `Chronicle: Documentation pending` | May need manual review |
+| `Monimen: Created AILOG-...` | Documentation was created |
+| `Monimen: No documentation required` | Change was minor (<10 lines) |
+| `Monimen: Documentation pending` | May need manual review |
 
 ---
 
@@ -338,7 +371,7 @@ AI agents are instructed to report their documentation status at the end of each
 
 ## Standards Alignment
 
-Enigmora Chronicle Framework aligns with:
+Enigmora Monimen Framework aligns with:
 
 - **ADR** (Architecture Decision Records) - Native support
 - **IEEE 830** - Requirements documentation structure
@@ -385,8 +418,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**Enigmora Chronicle Framework** — Because every change tells a story.
+**Enigmora Monimen Framework** — Because every change tells a story.
 
-[⬆ Back to top](#enigmora-chronicle-framework)
+[⬆ Back to top](#enigmora-monimen-framework)
 
 </div>

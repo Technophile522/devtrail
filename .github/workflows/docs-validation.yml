@@ -1,5 +1,5 @@
 # =============================================================================
-# Enigmora Chronicle Framework - Documentation Validation Workflow
+# Enigmora Monimen Framework - Documentation Validation Workflow
 # =============================================================================
 #
 # This workflow validates documentation on each Pull Request and push to main.
@@ -20,12 +20,12 @@ on:
   push:
     branches: [main, develop]
     paths:
-      - '.chronicle/**'
+      - '.monimen/**'
       - '.github/workflows/docs-validation.yml'
   pull_request:
     branches: [main, develop]
     paths:
-      - '.chronicle/**'
+      - '.monimen/**'
 
 jobs:
   validate-docs:
@@ -60,7 +60,7 @@ jobs:
         uses: tj-actions/changed-files@v44
         with:
           files: |
-            .chronicle/**/*.md
+            .monimen/**/*.md
 
       # =========================================================================
       # Validate file naming convention
@@ -260,7 +260,7 @@ jobs:
         run: |
           echo "📚 Generating documentation index..."
 
-          cat > .chronicle/INDEX.md << 'EOF'
+          cat > .monimen/INDEX.md << 'EOF'
           # Documentation Index
 
           *Automatically generated on $(date -u +"%Y-%m-%d %H:%M UTC")*
@@ -269,31 +269,31 @@ jobs:
           EOF
 
           # List documents by folder
-          for folder in .chronicle/*/; do
+          for folder in .monimen/*/; do
             folder_name=$(basename "$folder")
-            echo "" >> .chronicle/INDEX.md
-            echo "## ${folder_name}" >> .chronicle/INDEX.md
-            echo "" >> .chronicle/INDEX.md
+            echo "" >> .monimen/INDEX.md
+            echo "## ${folder_name}" >> .monimen/INDEX.md
+            echo "" >> .monimen/INDEX.md
 
             find "$folder" -name "*.md" -type f | sort | while read file; do
               filename=$(basename "$file")
               # Extract title from front-matter or use filename
               title=$(grep "^title:" "$file" 2>/dev/null | sed 's/title: *//' | head -1 || echo "$filename")
-              echo "- [$title]($file)" >> .chronicle/INDEX.md
+              echo "- [$title]($file)" >> .monimen/INDEX.md
             done
           done
 
-          echo "✅ Index generated: .chronicle/INDEX.md"
+          echo "✅ Index generated: .monimen/INDEX.md"
 
       - name: Commit index if changed
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
-          if git diff --quiet .chronicle/INDEX.md; then
+          if git diff --quiet .monimen/INDEX.md; then
             echo "No changes to index"
           else
-            git add .chronicle/INDEX.md
+            git add .monimen/INDEX.md
             git commit -m "docs: update documentation index [skip ci]"
             git push
           fi

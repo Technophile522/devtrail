@@ -1,6 +1,6 @@
-# Translation Guide - Enigmora Chronicle Framework
+# Translation Guide - Enigmora Monimen Framework
 
-This guide provides rules and guidelines for translating Chronicle Framework documentation to other languages.
+This guide provides rules and guidelines for translating Monimen Framework documentation to other languages.
 
 ---
 
@@ -18,9 +18,9 @@ This guide provides rules and guidelines for translating Chronicle Framework doc
 
 ## Language Configuration
 
-Chronicle Framework uses a configuration file to set the project's language:
+Monimen Framework uses a configuration file to set the project's language:
 
-**File**: `.chronicle/config.yml`
+**File**: `.monimen/config.yml`
 
 ```yaml
 # Language setting for templates and documentation
@@ -31,13 +31,13 @@ language: en
 
 ### How It Works
 
-1. AI agents read `.chronicle/config.yml` at the start of each session
+1. AI agents read `.monimen/config.yml` at the start of each session
 2. Based on the `language` value, they use templates from the appropriate path:
 
 | Language | Template Path |
 |----------|---------------|
-| `en` (default) | `.chronicle/templates/TEMPLATE-*.md` |
-| `es` | `.chronicle/templates/i18n/es/TEMPLATE-*.md` |
+| `en` (default) | `.monimen/templates/TEMPLATE-*.md` |
+| `es` | `.monimen/templates/i18n/es/TEMPLATE-*.md` |
 
 3. If the config file doesn't exist or `language` is not set, English is used as default
 
@@ -60,8 +60,8 @@ The AI agent will then use Spanish templates when creating documentation.
 | Category | Files | Location |
 |----------|-------|----------|
 | **Main Documentation** | README.md, ADOPTION-GUIDE.md, CONTRIBUTING.md, CODE_OF_CONDUCT.md | `i18n/{lang}/` |
-| **Templates** | TEMPLATE-*.md (8 files) | `.chronicle/templates/i18n/{lang}/` |
-| **Governance** | PRINCIPLES.md, DOCUMENTATION-POLICY.md, AGENT-RULES.md, QUICK-REFERENCE.md | `.chronicle/00-governance/i18n/{lang}/` |
+| **Templates** | TEMPLATE-*.md (8 files) | `.monimen/templates/i18n/{lang}/` |
+| **Governance** | PRINCIPLES.md, DOCUMENTATION-POLICY.md, AGENT-RULES.md, QUICK-REFERENCE.md | `.monimen/00-governance/i18n/{lang}/` |
 
 ### Files NOT to Translate
 
@@ -178,9 +178,9 @@ Keep these values in English:
 
 ```markdown
 <!-- Keep paths exactly as shown -->
-.chronicle/
-.chronicle/07-ai-audit/agent-logs/
-.chronicle/templates/TEMPLATE-AILOG.md
+.monimen/
+.monimen/07-ai-audit/agent-logs/
+.monimen/templates/TEMPLATE-AILOG.md
 ```
 
 ### 5. File Naming Convention Pattern
@@ -224,7 +224,7 @@ Basado en [REQ-2025-01-15-003].          # Keep reference format
 
 ```
 Enigmora
-Chronicle Framework
+Monimen Framework
 Claude Code
 Cursor
 GitHub Copilot
@@ -238,7 +238,7 @@ Gemini CLI
 ### Directory Layout
 
 ```
-chronicle/
+monimen/
 ├── i18n/
 │   ├── es/                          # Spanish translations
 │   │   ├── README.md
@@ -247,7 +247,7 @@ chronicle/
 │   │   └── CODE_OF_CONDUCT.md
 │   └── [other-lang]/                # Future languages
 │
-└── .chronicle/
+└── .monimen/
     ├── templates/
     │   ├── TEMPLATE-*.md            # English (default)
     │   └── i18n/
@@ -268,7 +268,7 @@ Translated files keep the same filename as the original:
 | Original | Translation |
 |----------|-------------|
 | `README.md` | `i18n/es/README.md` |
-| `TEMPLATE-AILOG.md` | `.chronicle/templates/i18n/es/TEMPLATE-AILOG.md` |
+| `TEMPLATE-AILOG.md` | `.monimen/templates/i18n/es/TEMPLATE-AILOG.md` |
 
 ---
 
@@ -307,7 +307,7 @@ Before submitting a translation, verify:
 - [ ] Document type prefixes unchanged (AILOG, AIDEC, ADR, etc.)
 - [ ] YAML keys unchanged (id, title, status, agent, confidence, etc.)
 - [ ] Enum values unchanged (draft, accepted, high, medium, low, etc.)
-- [ ] File paths unchanged (.chronicle/, 07-ai-audit/, etc.)
+- [ ] File paths unchanged (.monimen/, 07-ai-audit/, etc.)
 - [ ] Agent identifiers unchanged (claude-code-v1.0, etc.)
 - [ ] Cross-reference format unchanged ([ADR-YYYY-MM-DD-NNN])
 
@@ -351,6 +351,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for general contribution guidelines.
 
 ---
 
-*Enigmora Chronicle Framework — Because every change tells a story.*
+*Enigmora Monimen Framework — Because every change tells a story.*
 
 [Enigmora](https://enigmora.com)

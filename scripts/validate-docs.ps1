@@ -1,17 +1,17 @@
 # =============================================================================
-# Enigmora Chronicle Framework - Documentation Validation Script (PowerShell)
+# Enigmora Monimen Framework - Documentation Validation Script (PowerShell)
 # https://enigmora.com
 # =============================================================================
 #
 # Usage:
 #   .\scripts\validate-docs.ps1
-#   .\scripts\validate-docs.ps1 -Path ".chronicle/07-ai-audit"
+#   .\scripts\validate-docs.ps1 -Path ".monimen/07-ai-audit"
 #   .\scripts\validate-docs.ps1 -Verbose
 #
 # =============================================================================
 
 param(
-    [string]$Path = ".chronicle",
+    [string]$Path = ".monimen",
     [switch]$Verbose
 )
 

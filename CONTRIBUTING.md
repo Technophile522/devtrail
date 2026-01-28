@@ -1,6 +1,6 @@
-# Contributing to Enigmora Chronicle Framework
+# Contributing to Enigmora Monimen Framework
 
-Thank you for your interest in contributing to Chronicle Framework! This document provides guidelines and information for contributors.
+Thank you for your interest in contributing to Monimen Framework! This document provides guidelines and information for contributors.
 
 ## Table of Contents
 
@@ -89,8 +89,8 @@ Code contributions should:
 
 2. **Clone your fork**
    ```bash
-   git clone https://github.com/your-username/enigmora-chronicle.git
-   cd chronicle-framework
+   git clone https://github.com/your-username/enigmora-monimen.git
+   cd monimen-framework
    ```
 
 3. **Create a branch**
@@ -203,7 +203,7 @@ created: YYYY-MM-DD
 
 ### File Naming
 
-Chronicle documents:
+Monimen documents:
 ```
 [TYPE]-[YYYY-MM-DD]-[NNN]-[description].md
 ```
@@ -227,13 +227,13 @@ Chronicle documents:
 If you're proposing a new document type:
 
 1. **Create the template**
-   - Add `TEMPLATE-NEWTYPE.md` to `.chronicle/templates/`
+   - Add `TEMPLATE-NEWTYPE.md` to `.monimen/templates/`
    - Follow existing template patterns
 
 2. **Update governance docs**
-   - `.chronicle/00-governance/DOCUMENTATION-POLICY.md`
-   - `.chronicle/00-governance/AGENT-RULES.md`
-   - `.chronicle/QUICK-REFERENCE.md`
+   - `.monimen/00-governance/DOCUMENTATION-POLICY.md`
+   - `.monimen/00-governance/AGENT-RULES.md`
+   - `.monimen/QUICK-REFERENCE.md`
 
 3. **Update agent configs**
    - `CLAUDE.md`
@@ -272,8 +272,8 @@ Templates should include:
 
 If you have questions about contributing:
 
-1. Check existing [Issues](https://github.com/enigmora/chronicle-framework/issues)
-2. Check [Discussions](https://github.com/enigmora/chronicle-framework/discussions)
+1. Check existing [Issues](https://github.com/enigmora/monimen-framework/issues)
+2. Check [Discussions](https://github.com/enigmora/monimen-framework/discussions)
 3. Open a new Discussion for general questions
 4. Open an Issue for specific bugs or features
 
@@ -287,10 +287,10 @@ Contributors are recognized in:
 - Release notes for significant contributions
 - CONTRIBUTORS.md (for recurring contributors)
 
-Thank you for helping make Chronicle Framework better!
+Thank you for helping make Monimen Framework better!
 
 ---
 
-*Enigmora Chronicle Framework — Because every change tells a story.*
+*Enigmora Monimen Framework — Because every change tells a story.*
 
 [Enigmora](https://enigmora.com)

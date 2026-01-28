@@ -1,13 +1,13 @@
-# Enigmora Chronicle Framework - Documentation Guidelines
+# Enigmora Monimen Framework - Documentation Guidelines
 
 > **This file is automatically loaded at the start of each session.**
-> It contains the essential rules of the Enigmora Chronicle Framework for development traceability.
+> It contains the essential rules of the Enigmora Monimen Framework for development traceability.
 
 ---
 
 ## 1. Language Configuration
 
-Check `.chronicle/config.yml` for the project's language setting:
+Check `.monimen/config.yml` for the project's language setting:
 
 ```yaml
 language: en  # Options: en, es (default: en)
@@ -17,8 +17,8 @@ language: en  # Options: en, es (default: en)
 
 | Language | Template Path |
 |----------|---------------|
-| `en` (default) | `.chronicle/templates/TEMPLATE-*.md` |
-| `es` | `.chronicle/templates/i18n/es/TEMPLATE-*.md` |
+| `en` (default) | `.monimen/templates/TEMPLATE-*.md` |
+| `es` | `.monimen/templates/i18n/es/TEMPLATE-*.md` |
 
 If the config file doesn't exist or `language` is not set, use English (`en`) as default.
 
@@ -26,24 +26,24 @@ If the config file doesn't exist or `language` is not set, use English (`en`) as
 
 ## 2. Documentation Reporting
 
-At the end of each task, you MUST report your Chronicle documentation status:
+At the end of each task, you MUST report your Monimen documentation status:
 
 **If you created documentation:**
 ```
-Chronicle: Created AILOG-2025-01-27-001-implement-auth.md
+Monimen: Created AILOG-2025-01-27-001-implement-auth.md
 ```
 
 **If documentation was not needed:**
 ```
-Chronicle: No documentation required (minor change / <10 lines)
+Monimen: No documentation required (minor change / <10 lines)
 ```
 
 **If you should have documented but didn't:**
 ```
-Chronicle: Documentation pending - use /chronicle-status to review
+Monimen: Documentation pending - use /monimen-status to review
 ```
 
-This transparency helps users verify compliance with Chronicle Framework rules.
+This transparency helps users verify compliance with Monimen Framework rules.
 
 ---
 
@@ -124,13 +124,13 @@ risk_level: low | medium | high | critical
 
 ---
 
-## 9. Documentation Map (Chronicle)
+## 9. Documentation Map (Monimen)
 
 > **IMPORTANT**: This is the complete project structure.
 > Not everything is loaded in this session, but I can access any document when needed.
 
 ```
-.chronicle/
+.monimen/
 ├── 00-governance/              ← POLICIES AND RULES
 │   ├── PRINCIPLES.md           # Project guiding principles
 │   ├── DOCUMENTATION-POLICY.md # Complete documentation policy
@@ -185,15 +185,15 @@ risk_level: low | medium | high | critical
 
 | Situation | Document to load |
 |-----------|------------------|
-| Going to create an AILOG | `.chronicle/templates/TEMPLATE-AILOG.md` |
-| Going to create an AIDEC | `.chronicle/templates/TEMPLATE-AIDEC.md` |
-| Going to create an ADR | `.chronicle/templates/TEMPLATE-ADR.md` |
-| Going to create a REQ | `.chronicle/templates/TEMPLATE-REQ.md` |
-| Questions about naming or metadata | `.chronicle/00-governance/DOCUMENTATION-POLICY.md` |
-| Questions about my autonomy limits | `.chronicle/00-governance/AGENT-RULES.md` |
-| Need to see existing requirements | List `.chronicle/01-requirements/` |
-| Need to see existing ADRs | List `.chronicle/02-design/decisions/` |
-| Need to see technical debt | List `.chronicle/06-evolution/technical-debt/` |
+| Going to create an AILOG | `.monimen/templates/TEMPLATE-AILOG.md` |
+| Going to create an AIDEC | `.monimen/templates/TEMPLATE-AIDEC.md` |
+| Going to create an ADR | `.monimen/templates/TEMPLATE-ADR.md` |
+| Going to create a REQ | `.monimen/templates/TEMPLATE-REQ.md` |
+| Questions about naming or metadata | `.monimen/00-governance/DOCUMENTATION-POLICY.md` |
+| Questions about my autonomy limits | `.monimen/00-governance/AGENT-RULES.md` |
+| Need to see existing requirements | List `.monimen/01-requirements/` |
+| Need to see existing ADRs | List `.monimen/02-design/decisions/` |
+| Need to see technical debt | List `.monimen/06-evolution/technical-debt/` |
 
 ---
 
@@ -230,17 +230,17 @@ risk_level: low | medium | high | critical
 
 | Prefix | Name | Location |
 |--------|------|----------|
-| `AILOG` | AI Action Log | `.chronicle/07-ai-audit/agent-logs/` |
-| `AIDEC` | AI Decision | `.chronicle/07-ai-audit/decisions/` |
-| `ETH` | Ethical Review | `.chronicle/07-ai-audit/ethical-reviews/` |
-| `ADR` | Architecture Decision Record | `.chronicle/02-design/decisions/` |
-| `REQ` | Requirement | `.chronicle/01-requirements/` |
-| `TES` | Test Plan | `.chronicle/04-testing/` |
-| `INC` | Incident Post-mortem | `.chronicle/05-operations/incidents/` |
-| `TDE` | Technical Debt | `.chronicle/06-evolution/technical-debt/` |
+| `AILOG` | AI Action Log | `.monimen/07-ai-audit/agent-logs/` |
+| `AIDEC` | AI Decision | `.monimen/07-ai-audit/decisions/` |
+| `ETH` | Ethical Review | `.monimen/07-ai-audit/ethical-reviews/` |
+| `ADR` | Architecture Decision Record | `.monimen/02-design/decisions/` |
+| `REQ` | Requirement | `.monimen/01-requirements/` |
+| `TES` | Test Plan | `.monimen/04-testing/` |
+| `INC` | Incident Post-mortem | `.monimen/05-operations/incidents/` |
+| `TDE` | Technical Debt | `.monimen/06-evolution/technical-debt/` |
 
 ---
 
-*Enigmora Chronicle Framework v1.0.0 | Last updated: 2025-01-27*
-*For complete rules: `.chronicle/00-governance/AGENT-RULES.md`*
+*Enigmora Monimen Framework v1.0.0 | Last updated: 2025-01-27*
+*For complete rules: `.monimen/00-governance/AGENT-RULES.md`*
 *[Enigmora](https://enigmora.com) — Because every change tells a story.*
