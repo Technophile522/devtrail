@@ -337,6 +337,34 @@ Los agentes IA reportan su estado de documentación al final de cada tarea:
 | `Monimen: No documentation required` | Cambio menor (<10 líneas) |
 | `Monimen: Documentation pending` | Puede necesitar revisión manual |
 
+### Arquitectura Multi-Agente
+
+Monimen Framework proporciona soporte nativo de skills para múltiples agentes IA a través de una arquitectura en capas:
+
+```
+tu-proyecto/
+├── .agent/workflows/       # 🌐 Agnóstico (Antigravity, futuros agentes)
+│   ├── monimen-new.md
+│   ├── monimen-status.md
+│   └── ...
+├── .gemini/skills/         # 🔵 Gemini CLI (Google)
+│   ├── monimen-new/SKILL.md
+│   └── ...
+└── .claude/skills/         # 🟣 Claude Code (Anthropic)
+    ├── monimen-new/SKILL.md
+    └── ...
+```
+
+| Directorio | Agente | Producto | Formato |
+|------------|--------|----------|---------|
+| `.agent/workflows/` | Antigravity, genérico | Extensiones VS Code/Cursor | `skill-name.md` con frontmatter YAML |
+| `.gemini/skills/` | Gemini CLI | CLI terminal de Google | `skill-name/SKILL.md` |
+| `.claude/skills/` | Claude Code | Agente de codificación de Anthropic | `skill-name/SKILL.md` |
+
+> **Nota**: `.agent/` es el estándar **agnóstico de proveedor**. Los directorios específicos de agentes (`.gemini/`, `.claude/`) proporcionan compatibilidad para esas plataformas siguiendo sus convenciones nativas.
+
+Todas las implementaciones de skills son **funcionalmente idénticas**—solo difiere el formato para coincidir con los requisitos de cada agente.
+
 ---
 
 ## Plataformas Soportadas
