@@ -3,19 +3,6 @@ layout: default
 title: Home
 ---
 
-<div align="center">
-
-# DevTrail
-
-**Documentation Governance for AI-Assisted Software Development**
-
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/Enigmora/devtrail)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/enigmora/devtrail/blob/main/LICENSE)
-
-</div>
-
----
-
 ## Welcome
 
 DevTrail ensures that every significant change in your codebase—whether made by a human or AI—is **documented, attributed, and reviewable**.
@@ -60,12 +47,4 @@ DevTrail answers all of these with structured, traceable documentation.
 
 ---
 
-<div align="center">
-
 [Get Started →](handbook/getting-started)
-
----
-
-*[Enigmora](https://enigmora.com) — Because every change tells a story.*
-
-</div>
