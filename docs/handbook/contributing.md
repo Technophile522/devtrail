@@ -1,5 +1,7 @@
 ---
 layout: default
+parent: Handbook
+nav_order: 8
 title: Contributing
 ---
 
