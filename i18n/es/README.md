@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="../../assets/logo-devtrail.svg" alt="DevTrail Logo" width="160" height="160">
-
 # DevTrail
 
 **Gobernanza de Documentación para Desarrollo de Software Asistido por IA**
