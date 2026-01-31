@@ -243,7 +243,7 @@ All agent configurations include a **Git Operations** section that enforces:
 
 All changes must go through feature/fix branches and Pull Requests.
 
-Full details: `.devtrail/03-implementation/GIT-BRANCHING-STRATEGY.md`
+Full details: `.devtrail/GIT-BRANCHING-STRATEGY.md`
 
 ---
 
