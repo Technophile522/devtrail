@@ -16,7 +16,7 @@ Todos los cambios deben pasar por ramas feature/fix y Pull Requests. Esto asegur
 ## Convención de Nombres de Ramas
 
 | Prefijo | Propósito | Ejemplo |
-|---------|-----------|---------|
+| --------- | ----------- | --------- |
 | `feature/` | Nuevas funcionalidades o mejoras | `feature/export-excel` |
 | `feat/` | Alias para feature | `feat/folio-c5` |
 | `fix/` | Corrección de errores | `fix/report-form-tests` |
@@ -30,11 +30,13 @@ Todos los cambios deben pasar por ramas feature/fix y Pull Requests. Esto asegur
 ## Flujo de Trabajo
 
 1. **Antes de comenzar**, verifica la rama actual:
+
    ```bash
    git branch --show-current
    ```
 
 2. **Crear rama** desde `main` actualizado:
+
    ```bash
    git checkout main
    git pull origin main
@@ -44,6 +46,7 @@ Todos los cambios deben pasar por ramas feature/fix y Pull Requests. Esto asegur
 3. **Hacer commits** siguiendo el formato de commits convencionales
 
 4. **Push y crear PR**:
+
    ```bash
    git push -u origin fix/nombre-descriptivo
    gh pr create --title "fix: descripción" --body "..."
@@ -58,7 +61,7 @@ Todos los cambios deben pasar por ramas feature/fix y Pull Requests. Esto asegur
 Usa prefijos semánticos en los mensajes de commit:
 
 | Prefijo | Caso de Uso |
-|---------|-------------|
+| --------- | ------------- |
 | `feat:` | Nueva funcionalidad |
 | `fix:` | Corrección de error |
 | `docs:` | Solo documentación |
